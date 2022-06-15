@@ -49,6 +49,7 @@
 
 .viewsort{
     padding-right: 7px;
+    cursor: pointer;
 }
 .paginationWrap{
     /* border: 2px solid gray; */
