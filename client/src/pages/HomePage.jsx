@@ -1,9 +1,10 @@
 import React from 'react'
+import MainSlider from '../components/Sliders/MainSlider'
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div style={{textAlign:"center"}}>
+      <MainSlider/>
     </div>
   )
 }
