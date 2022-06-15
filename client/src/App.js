@@ -1,11 +1,12 @@
 
 import './App.css';
-
-import  SlideItem  from './Components/Trending'
+import CommunityPost from "./Components/Community"
+import  Trending  from './Components/Trending'
 function App() {
   return (
     <div className="App">
-       <SlideItem/>
+       <Trending/>
+       <CommunityPost/>
     </div>
   );
 }
