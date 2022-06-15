@@ -1,7 +1,6 @@
 import styled,{css} from "styled-components";
 import { useEffect, useState } from "react";
 import styles from './Beauty/Pagination.module.css';
-import "./Beauty/common.css"
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: grid;
@@ -75,6 +74,17 @@ const TextDiv = styled.div`
     margin: 0;
   }
 `;
+const Header= styled.h1`
+font-size: 24px;
+font-family: 'Open Sans', sans-serif;
+`
+const SubHead= styled.p`
+font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+text-align: left;
+
+`
 const HeartImg = styled.img``;
 
 const ProductItem = () => {
@@ -118,7 +128,13 @@ const ProductItem = () => {
   }
   return (
     <div>
-     <div className={styles.pagdiv}>
+     <div>
+       
+       <Header>Designer Beauty</Header>
+       <SubHead>Shop designer beauty with price comparison across 500+ stores in one place. Discover the latest designer beauty at ModeSens.</SubHead>
+   
+          </div>
+     <div className={styles.pagdiv} style={{marginTop:"-150px"}}>
      
      <div className={styles.paginationWrap}>
        <div className={styles.pagination}>

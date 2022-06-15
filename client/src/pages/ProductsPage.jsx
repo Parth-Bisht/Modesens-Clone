@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import DesignerBeauty from '../components/Beauty/DesignerBeauty';
 import { FilterDiv } from '../components/Beauty/FilterSection';
-import ProductItem from '../components/Items';
+import ProductItem from '../components/BeautyItems';
 
 
 const Wrapper= styled.div`
@@ -26,7 +25,7 @@ const ProductsPage = () => {
                 <FilterDiv/>
             </Left>
             <Right>
-                <DesignerBeauty/>
+               
                
                 <ProductItem/>
             </Right>
