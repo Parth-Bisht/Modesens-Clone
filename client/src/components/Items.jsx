@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
+import styles from './Beauty/Pagination.module.css';
+
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: grid;
@@ -68,13 +70,16 @@ const TextDiv = styled.div`
 const HeartImg = styled.img``;
 
 const ProductItem = () => {
+  const [page,setPage]=useState(1)
   const [items, setItems] = useState([]);
   useEffect(() => {
     getdata();
-  }, []);
+    // console.log("data recieved")
+    // console.log(page)
+  }, [page]);
 
   async function getdata() {
-    let datas = await fetch(`https://modesense-masai.herokuapp.com/beuties`);
+    let datas = await fetch(`https://modesense-masai.herokuapp.com/beuties?_page=${page}&_limit=16`);
 
     let data = await datas.json();
     setItems(data.data);
@@ -85,6 +90,54 @@ const ProductItem = () => {
 
   return (
     <div>
+     <div className={styles.pagdiv}>
+     
+     <div className={styles.paginationWrap}>
+       <div className={styles.pagination}>
+         <span  onClick={() => setPage(1)}>1</span>
+         <span  onClick={() => setPage(2)}>2</span>
+         <span  onClick={() => setPage(3)}>3</span>
+         <span  onClick={() => setPage(4)}>4</span>
+         <div className={styles.paginationDot}>
+           <c>.</c>
+           <c>.</c>
+           <c>.</c>
+         </div>
+         
+         <div className={styles.imgTag}>
+         <img src="https://img.icons8.com/material-outlined/14/000000/more-than.png"  onClick={() => setPage(page+1)} alt=""/></div>
+       </div>
+     </div>
+     <div className={styles.sortdiv}>
+       <img
+         className={styles.viewsort}
+         src="https://cdn.modesens.com/static/img/20210908column2.svg"
+         alt=""
+       />
+       <img
+         className={styles.viewsort}
+         src="https://cdn.modesens.com/static/img/20210908column3.svg"
+         alt=""
+       />
+       <img
+         className={styles.viewsort}
+         src="https://cdn.modesens.com/static/img/20210908column4_active.svg"
+         alt=""
+       />
+       <div>
+         <select className="options" name="" id="">
+           <option value="">Best Sellers</option>
+           <option value="">New Arrivals</option>
+           <option value="">Most Liked</option>
+           <option value="">Highest Price</option>
+           <option value="">Lowest Price</option>
+           <option value="">New Sales</option>
+           <option value="">Largest Discount Amount</option>
+           <option value="">Largest Discount Percentage</option>
+         </select>
+       </div>
+     </div>
+   </div>
       <Wrapper>
         {items.map((e) => {
           return (
