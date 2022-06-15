@@ -4,6 +4,7 @@
     /* font-family: 'Sunflower', sans-serif; */ 
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 30px;
 }
 .mainbox{
     /* margin-top: 0px; */
@@ -85,9 +86,12 @@
     width: 60px;
     height: 60px;
     margin-right: -14px;
+    transition: all 1s;
+    /* transform: scale(1.1); */
+}
+.print1:hover{
     transform: scale(1.1);
 }
-
 
 
 .News{
@@ -122,12 +126,12 @@
    font-weight: 600;
    color: rgba(0, 0, 0, 0.738);
    cursor: pointer;
-transition: all 1s;
+transition: all 1ms;
 letter-spacing: 2px;
 }
 .inputSubmit:hover{
-    background-color: rgba(0, 0, 0, 0.507);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.867);
+    color: rgba(255, 255, 255, 0.89);
 }
 .hrTag{
     margin-bottom: 20px ;
@@ -162,7 +166,7 @@ input[type='radio'] {
     cursor: pointer;
   }
   
-  input[type='radio']:checked:nth-child(1) {
+  input[type='radio']:checked {
     display: inline-block;
     background: #333;
   }
