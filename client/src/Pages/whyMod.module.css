@@ -126,9 +126,23 @@ margin-bottom: -200px;
     width: 1000px;
     margin-top: 40px;
 }
+.loyalty{
+
+    width: 1060px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 40px;
+}
 .loy_flex{
     display: flex;
     justify-content: space-between;
+    gap: 60px;
 }
-
+.loy_flex div{
+    /* width: 600px; */
+}
+.loy_right div{
+    display: flex;
+    gap: 10px;
+}
 

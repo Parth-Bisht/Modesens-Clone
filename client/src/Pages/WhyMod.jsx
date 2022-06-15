@@ -49,7 +49,7 @@ WE'RE YOUR DIGITAL SHOPPING ASSISTANT</h4>
 
 
 
-<div>
+<div className={style.loyalty}>
 <h4 className={style.comp_h}>  Loyalty <span>Premium Service </span></h4>
 <p>Share your favorite likes, your best posts, and get inspiration from others in ModeSens Community period.</p>
 <br />
@@ -58,8 +58,19 @@ WE'RE YOUR DIGITAL SHOPPING ASSISTANT</h4>
   <p>Sign up to earn points towards Silver, Gold and Platinum memberships. You will get access to ModeSens Concierge providing you the best price, service, and a worry-free return experience.</p>
   <button>JOIN LOYALTY TODAY</button>
 </div>
-<div className={style.loy_right}></div>
+<div className={style.loy_right}>
+  <div>
+<img src='https://cdn.modesens.com/static/img/20220506bags.svg' alt="" />
+<p>Shop Through ModeSens For Shopper Purchase Protection Plus Earn Membership Points</p>
+  </div>
+<div>
+  <img src="https://cdn.modesens.com/static/img/20220506car.svg" alt="" />
+  <p>At Silver Membership Use ModeSens Concierge For One Click Shopping Across Hundreds of Stores</p>
 
+
+</div>
+
+</div>
 
 </div>
 </div>
