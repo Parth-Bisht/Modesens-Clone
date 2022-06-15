@@ -113,7 +113,7 @@ export default class AutoPlayCarousel extends React.Component {
           outsideChevron
           children={carouselItems}
         />
-        <br/>>br/>
+        <br/><br/>
          <div style={{width:"200px",margin:"auto"}}>
         <ShowMore>Show More</ShowMore>
         </div>
