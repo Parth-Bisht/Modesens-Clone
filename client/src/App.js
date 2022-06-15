@@ -2,6 +2,7 @@ import ProductsPage from "./pages/ProductsPage";
 import {Routes,Route} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import SingleProduct from "./pages/SingleProduct";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route path="/products" element={<ProductsPage/>}></Route>
         <Route path="/products/:id" element={<SingleProduct/>}></Route>
       </Routes>
-        
+        <Footer/>
     </div>
   );
 }
