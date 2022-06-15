@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
+import CommunityPost from '../components/Sliders/Community';
+import Bottom from "../components/Footer/Bottom";
 const Container = styled.div``;
 
 const Wrapper = styled.div`
@@ -249,7 +251,10 @@ const SingleProduct = () => {
           </PicInfo>
         </InnerWrapper>
       </Wrapper>
+      <CommunityPost/>
+      <Bottom/>
     </Container>
+
   );
 };
 
