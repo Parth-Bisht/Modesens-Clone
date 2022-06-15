@@ -2,11 +2,13 @@
 import './App.css';
 import Bottom from './Components/Bottom';
 import { Footer } from './Components/Footer';
+import WhyMod from './Pages/WhyMod';
 
 function App() {
   return (
     <div className="App">
-      <Bottom/>
+      {/* <Bottom/> */}
+      <WhyMod/>
      <Footer/>
     </div>
   );
