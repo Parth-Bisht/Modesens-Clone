@@ -51,7 +51,7 @@ const ThirdSlider = () => {
     prevArrow: <PrevArrow />,
   };
   return (
-    <div style={{ width: "95%", margin: "auto", marginTop: "50px" }}>
+    <div style={{ width: "95%", margin: "auto", marginTop: "50px" , marginBottom:"200px"}}>
       <Slider {...settings}>
         <div className={Styles.popUp__3}>
           <div>
