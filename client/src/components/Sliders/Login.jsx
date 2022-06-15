@@ -1,7 +1,7 @@
 import { React } from "react";
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
-import style from "../Styles/Login.module.css";
+import style from "./Login.module.css";
 
 export const Login = ({ isShowLogin }) => {
   const [formData, setFormData] = useState({});

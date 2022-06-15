@@ -1,14 +1,17 @@
+import ProductsPage from "./pages/ProductsPage";
+import {Routes,Route} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SingleProduct from "./pages/SingleProduct";
 
-import './App.css';
-import CommunityPost from "./Components/Community"
-import { Login } from './Components/Login';
-import  Trending  from './Components/Trending'
 function App() {
   return (
-    <div className="App">
-       <Trending/>
-       <CommunityPost/>
-       <Login/>
+    <div>
+      <Routes>
+        <Route path="/" element={<HomePage/>}></Route>
+        <Route path="/products" element={<ProductsPage/>}></Route>
+        <Route path="/products/:id" element={<SingleProduct/>}></Route>
+      </Routes>
+        
     </div>
   );
 }

@@ -9,29 +9,25 @@ const chevronWidth = 80;
 const Wrapper = styled.div`
   padding: 0 ${chevronWidth}px;
   max-width: 1200px;
-  
   margin: 0 auto;
   margin-bottom: 100px;
-  
+  position: relative;
 `;
 const Button = styled.button`
     border: 1px solid black;
     margin: 0 auto;
     /* padding: 5px 40px; */
-    width: 80%;
-    position: absolute;
+    width: 23%;
     font-weight: bold;
-    top: 60%;
-    bottom: 30%;
-display: none;
-background : rgba(255, 255, 255, 0.6) none repeat scroll 0% 0% / auto padding-box border-box;
-z-index : 99;
+    position: absolute;
+    display: none;
+    background : rgba(255, 255, 255, 0.6) none repeat scroll 0% 0% / auto padding-box border-box;
+    z-index : 99;
 
 
 `
 const Container = styled.div`
     border: .1px solid #cdcdcd;
-    position: relative;
     &:hover ${Button}{
       display: block;
   }
