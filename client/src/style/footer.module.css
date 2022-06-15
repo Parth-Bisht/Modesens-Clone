@@ -126,7 +126,7 @@
    font-weight: 600;
    color: rgba(0, 0, 0, 0.738);
    cursor: pointer;
-transition: all 1ms;
+transition: all 1s;
 letter-spacing: 2px;
 }
 .inputSubmit:hover{
@@ -146,10 +146,7 @@ letter-spacing: 2px;
     height: 26px;
     margin-top: 10px;
 }
-.connect img{
-    height: 16px;
-    margin-top: 5px;
-}
+
 ::placeholder{
     font-weight: 600;
     font-size: 13px;

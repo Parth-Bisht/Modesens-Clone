@@ -65,3 +65,16 @@ color: black;
 }
 
 
+@media only screen and (max-width: 740px) {
+    .flex{
+        width: 90%;
+        margin: auto;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+    }
+.wrapper{
+    width: 100%;
+}
+}
+
+

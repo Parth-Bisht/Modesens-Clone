@@ -57,9 +57,13 @@ export const Footer=()=>{
             <a href="https://play.google.com/store/apps/details?id=com.modesens.androidapp&hl=en_IN&gl=US" 
             > ModeSense App for IOS and Android</a><br />
                </div>
+               <div>
+
             <img src={web} alt="web"/>
-             <a href="https://microsoftedge.microsoft.com/addons/detail/modesens-shopping-assista/bpmcdjmehcbmbedbhmmipkcccmhigamj">Add to Browser</a><br />
+             <a href="https://microsoftedge.microsoft.com/addons/detail/modesens-shopping-assista/bpmcdjmehcbmbedbhmmipkcccmhigamj"
+             style={{marginTop:"10px"}}>Add to Browser</a><br />
            
+               </div>
             </div>
             <div className={style.News}>
                 <h3>NEWSLETTER SIGN UP</h3>
