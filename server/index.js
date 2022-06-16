@@ -20,9 +20,13 @@ app.use(express.json());
 
 
 app.get("/beauties", async (req, res) => {
+  // _page=${page}&_limit=16
+  const{_page,_limit} = req.query;
+  const currPage = Number(_page) || 1;
+  const skip = _limit*(currPage-1);
 
   try {
-    const data = await Beauty.find().limit (1) .skip (1)
+    const data = await Beauty.find().limit(_limit).skip (skip)
     return res.status(201).send(data);
 
   } catch (err) {
@@ -31,8 +35,14 @@ app.get("/beauties", async (req, res) => {
 });
 
 app.get("/mens", async (req, res) => {
+ 
+  const{_page,_limit} = req.query;
+  const currPage = Number(_page) || 1;
+  const skip = _limit*(currPage-1);
+
+
   try {
-    const data = await Men.find();
+    const data = await Men.find().limit(_limit).skip (skip)
     return res.status(201).send(data);
   } catch (err) {
     res.json({ message: err.message });
@@ -40,8 +50,14 @@ app.get("/mens", async (req, res) => {
 });
 
 app.get("/womens", async (req, res) => {
+
+  const{_page,_limit} = req.query;
+  const currPage = Number(_page) || 1;
+  const skip = _limit*(currPage-1);
+
+
   try {
-    const data = await Women.find();
+    const data = await Women.find().limit(_limit).skip (skip)
     return res.status(201).send(data);
   } catch (err) {
     res.json({ message: err.message });
