@@ -58,7 +58,7 @@ console.log(active);
         </div>
 
 {
-    active==='Discover'?  <CommunityData/> : 'Hello'
+    active==='Discover'?  <CommunityData/> : ' '
 }
          
 
