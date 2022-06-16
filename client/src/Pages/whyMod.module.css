@@ -44,7 +44,7 @@
 .iframe{
     width:710px;
      height:400px;
-     margin-top: 50px;
+     margin-top: 60px;
      border-left: 1px solid black;
      background-image: url('https://cdn.modesens.com/static/img/20210407videoposter.jpg');
 background-size: cover;
@@ -99,7 +99,6 @@ padding-right: 10px;
     background-color: white;
 }
 .right{
-border: 1px solid red;
 margin: 0;
 padding: 0;
 margin-left: -20px;
@@ -141,8 +140,40 @@ margin-bottom: -200px;
 .loy_flex div{
     /* width: 600px; */
 }
+.loy_left p{
+    width: 490px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.838);
+}
 .loy_right div{
     display: flex;
     gap: 10px;
+    width: 460px;
 }
+.loy_right div p{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.838);
+}
+.loy_left button{
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: rgba(0, 0, 0, 0.937);
+    color: rgba(255, 255, 255, 0.933);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.loy_left button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+}
+.learn{
+    padding-top: 1px;
+}
+
 

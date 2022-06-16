@@ -66,16 +66,16 @@ WE'RE YOUR DIGITAL SHOPPING ASSISTANT</h4>
 <div>
   <img src="https://cdn.modesens.com/static/img/20220506car.svg" alt="" />
   <p>At Silver Membership Use ModeSens Concierge For One Click Shopping Across Hundreds of Stores</p>
-
-
 </div>
-
 </div>
-
 </div>
 </div>
 
-
+<div className={style.community+" "+style.learn}>
+<h4 className={style.comp_h}> <span>Want to </span> learn more? </h4>
+<p>Click to read about ModeSens history, vision and services.</p>
+<br /><button className={style.join_btn}>ABOUT MODESENS</button>
+</div>
 
 
 
