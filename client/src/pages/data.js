@@ -61,3 +61,12 @@ export const offers=[
         }
     
 ]
+
+// {
+//     "image_url":"",
+//     "brand":"",
+//     "href":"",
+//     "title":"",
+//     "price":,
+//     "offprice":
+// }

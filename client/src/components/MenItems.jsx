@@ -98,12 +98,13 @@ const MenItem = () => {
     // console.log("data recieved")
     // console.log(page)
   }, [page,grid2]);
-
+//_page=${page}&_limit=16
   async function getdata() {
-    let datas = await fetch(`https://modesense-masai.herokuapp.com/beuties?_page=${page}&_limit=16`);
+    let datas = await fetch(`http://localhost:8080/beauties`);
 
     let data = await datas.json();
-    setItems(data.data);
+    console.log(data)
+    setItems(data);
   }
   const handleUser = (e) => {
     localStorage.setItem("IndData", JSON.stringify(e));
