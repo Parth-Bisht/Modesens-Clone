@@ -1,6 +1,6 @@
 import styled,{css} from "styled-components";
 import { useEffect, useState } from "react";
-import styles from './Beauty/Pagination.module.css';
+import styles from '../Beauty/Pagination.module.css';
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: grid;

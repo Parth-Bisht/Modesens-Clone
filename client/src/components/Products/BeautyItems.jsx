@@ -1,6 +1,6 @@
 import styled,{css} from "styled-components";
 import { useEffect, useState } from "react";
-import styles from './Beauty/Pagination.module.css';
+import styles from '../Beauty/Pagination.module.css';
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: grid;
@@ -100,7 +100,7 @@ const ProductItem = () => {
   }, [page,grid2]);
 
   async function getdata() {
-    let datas = await fetch(`http://localhost:8080/beauties`);
+    let datas = await fetch(`https://modesensclone.herokuapp.com/beauties?_page=${page}`);
 
     let data = await datas.json();
     setItems(data);

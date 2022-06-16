@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FilterDiv } from '../components/Beauty/FilterSection';
-import MenItem from '../components/MenItems';
+import MenItem from '../components/Products/MenItems';
 
 
 const Wrapper= styled.div`
