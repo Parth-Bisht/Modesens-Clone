@@ -6,7 +6,7 @@ const Women = require("./Models/womens");
 const app = express();
 
 const cors = require("cors");
-app.use(cors({ origin: ["http://localhost:8080"] }));
+app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -21,12 +21,14 @@ app.use(express.json());
 
 app.get("/beauties", async (req, res) => {
   // _page=${page}&_limit=16
-  const{_page,_limit} = req.query;
+  const _limit=10;
+  // const count = await Beauty.countDocuments();
+  const{_page} = req.query;
   const currPage = Number(_page) || 1;
   const skip = _limit*(currPage-1);
 
   try {
-    const data = await Beauty.find().limit(_limit).skip(skip)
+    const data = await Beauty.find().limit(_limit).skip (skip)
     return res.status(201).send(data);
 
   } catch (err) {
@@ -35,8 +37,8 @@ app.get("/beauties", async (req, res) => {
 });
 
 app.get("/mens", async (req, res) => {
- 
-  const{_page,_limit} = req.query;
+  const _limit=10;
+  const{_page} = req.query;
   const currPage = Number(_page) || 1;
   const skip = _limit*(currPage-1);
 
@@ -50,8 +52,9 @@ app.get("/mens", async (req, res) => {
 });
 
 app.get("/womens", async (req, res) => {
+  const _limit=10;
 
-  const{_page,_limit} = req.query;
+  const{_page} = req.query;
   const currPage = Number(_page) || 1;
   const skip = _limit*(currPage-1);
 
@@ -73,5 +76,5 @@ app.listen(PORT, async () => {
     console.log({ message: err.message });
   }
 
-  console.log("listening on port" + PORT);
+  console.log("listening on port " + PORT);
 });
