@@ -13,8 +13,7 @@ WE'RE YOUR DIGITAL SHOPPING ASSISTANT</h4>
         <iframe className={style.iframe} 
         src="https://www.youtube.com/embed/RKu9FJg3hRY?rel=0&modestbranding=0&autohide=0&showinfo=0&controls=0"
         title="YouTube video player"
-         frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
 
 <div className={style.compare_price}>
