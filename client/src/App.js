@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import SingleProduct from "./pages/SingleProduct";
 import { Footer } from "./components/Footer/Footer";
 import WhyModesensPage from "./pages/WhyModesensPage";
+import OffersPage from "./pages/OffersPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/products" element={<ProductsPage/>}></Route>
         <Route path="/products/:id" element={<SingleProduct/>}></Route>
         <Route path="/whymodsens" element={<WhyModesensPage/>}></Route>
+        <Route path="/offers" element={<OffersPage/>}></Route>
       </Routes>
         <Footer/>
     </div>
