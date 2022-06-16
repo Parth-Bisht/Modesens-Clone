@@ -11,14 +11,6 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
-
-
-// Client makes request for most recent items: GET /items?limit=20
-// On scroll/next page, client makes second request GET /items?limit=20&offset=20
-// On scroll/next page, client makes third request GET /items?limit=20&offset=40
-
-
 app.get("/beauties", async (req, res) => {
   // _page=${page}&_limit=16
   const _limit=12;
@@ -35,10 +27,10 @@ app.get("/beauties", async (req, res) => {
     res.json({ message: err.message });
   }
 });
-app.post("/mens",(req,res)=>{
+app.post("/womens",(req,res)=>{
   
   // const data=Men.insertMany()
-  const movie = new Men({...req.body});
+  const movie = new Women({...req.body});
   movie.save((err,movie)=>{
       try {
           res.send(movie);
@@ -63,7 +55,7 @@ app.get("/mens", async (req, res) => {
 });
 
 app.get("/womens", async (req, res) => {
-  const _limit=10;
+  const _limit=12;
 
   const{_page} = req.query;
   const currPage = Number(_page) || 1;

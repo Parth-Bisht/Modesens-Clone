@@ -5,6 +5,7 @@ import SingleProduct from "./pages/SingleProduct";
 import { Footer } from "./components/Footer/Footer";
 import Men from "./pages/Men";
 import Offers from "./pages/Offers";
+import Women from "./pages/Women";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/products" element={<ProductsPage/>}></Route>
         <Route path="/products/:id" element={<SingleProduct/>}></Route>
         <Route path="/men" element={<Men/>}/>
+        <Route path="/women" element={<Women/>}/>
         <Route path="/offers" element={<Offers/>}/>
       </Routes>
         <Footer/>
