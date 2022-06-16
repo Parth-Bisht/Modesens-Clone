@@ -1,0 +1,125 @@
+.p__1 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.p__2 {
+  width: 70%;
+  margin: auto;
+  color: grey;
+}
+.div__1 {
+  position: relative;
+  margin-top: 5rem;
+}
+.div__1 > hr {
+  background-color: black;
+  width: 75%;
+  /* border: 1px solid; */
+}
+.div__1 > p {
+  position: absolute;
+  font-size: 1.6rem;
+  left: 50%;
+  padding: 15px;
+  margin-top: -15px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+.p__3 {
+  width: 70%;
+  margin: auto;
+  color: grey;
+  margin-top: 25px;
+}
+
+.div__2 {
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  grid-template-rows: repeat(auto, 2rem);
+  gap: 3rem;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+}
+.div__2 > div {
+  cursor: pointer;
+  position: relative;
+}
+
+.div__2 > div > p {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  text-align: center;
+}
+/* .heart{
+    display: none;
+} */
+.div__2 > div > button {
+  margin-left: 10px;
+  background-color: transparent;
+  outline: none;
+  /* display:none; */
+  border: 1px solid black;
+}
+
+.dropdown_content {
+  border: 1px solid black;
+  height: 13rem;
+  /* width: 100%; */
+  width: 20rem;
+  margin-top: 10px;
+  position: absolute;
+  left: 9rem;
+  z-index: 1;
+  display: none;
+  background-color: white;
+}
+.dropdown_content > p:nth-child(1) {
+  margin: 0;
+  font-weight: 400;
+}
+.dropdown_content > p:nth-child(2) {
+  margin: 0;
+  font-size: 0.7rem;
+  color: grey;
+}
+.dropdown_content > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.dropdown_content > div > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown_content > div > div > p {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: -0rem;
+}
+.dropdown_content > div > div > button {
+  text-align: center;
+  border: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.dropdown_content > div > div > button:last-child {
+  border: none;
+}
+.div__2 > div:hover .dropdown_content {
+  display: block;
+}
+/* .div__2>div:hover .heart{
+    display:inline;
+
+}
+.div__2>div:hover .block{
+    display:inline;
+} */

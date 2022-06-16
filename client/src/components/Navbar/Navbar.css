@@ -1,0 +1,110 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  align-items: center;
+  /* position: relative; */
+  height: 50px;
+  padding-left: 1%;
+  margin-top: 1%;
+  /* justify-content: space-between; */
+}
+
+.navbar > div > img {
+  width: 100%;
+  /* padding-top:7%; */
+  margin-left: 20px;
+}
+.links {
+  display: flex;
+  /* padding-top:1%; */
+  margin-left: 30px;
+  /* width: 1000px; */
+  /* border: 1px solid black; */
+}
+.links > a {
+  margin-left: 3%;
+  font-size: 80%;
+  font-weight: bold;
+  width: auto;
+  color: black;
+  text-decoration: none;
+}
+.links > a:hover {
+  border-bottom: 1px solid rgb(142, 40, 40);
+}
+.rightIcons {
+  display: flex;
+  margin-left: 35%;
+  align-items: center;
+  gap: 15px;
+}
+.rightIcons img {
+  height: 20px;
+  width: 20px;
+}
+.search {
+  display: flex;
+  /* gap: 15px; */
+  /* justify-content: space-evenly; */
+  /* margin-right: 40px; */
+}
+
+.search input {
+  border: none;
+  outline: none;
+  /* border-bottom: 1px solid #333; */
+  width: 80px;
+  margin-left: -10px;
+  background-color: transparent;
+}
+.rightIcons > div > span {
+  /* margin-left:8%; */
+  margin-bottom: 10%;
+  height: 40%;
+}
+.secondDiv > div {
+  z-index: 1;
+  display: flex;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-top: 1px solid rgb(207, 200, 200);
+}
+.secondDiv > div > div {
+  padding-left: 2%;
+}
+
+.secondDiv > div > div > a {
+  font-size: 80%;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.secondDiv > div > div > a:hover {
+  border-bottom: 1px solid rgb(142, 40, 40);
+}
+.firstdata > div {
+  z-index: 1;
+  border: 1px solid rgb(213, 205, 205);
+  width: 100%;
+  margin-left: -10%;
+  padding-left: 5%;
+  padding-right: 6%;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  margin-top: -2.3%;
+}
+.firstdata > div > div {
+  padding: 4%;
+}
+.firstdata > div > div > a {
+  font-size: 80%;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.firstdata > div > div > a:hover {
+  border-bottom: 1px solid rgb(142, 40, 40);
+}

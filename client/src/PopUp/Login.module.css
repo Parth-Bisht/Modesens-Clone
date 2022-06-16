@@ -1,0 +1,174 @@
+.show {
+  display: block;
+  transition: 800ms;
+  opacity: 1;
+  /* z-index: 10300; */
+}
+
+.show.active {
+  transform: translateZ(-100px) scale(0);
+  opacity: 0;
+  display: none;
+
+  /* z-index: -200; */
+}
+
+.containerLogin {
+  /* border: 1px solid rgb(129, 129, 129); */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 320px;
+  width: 68%;
+  height: 600px;
+  margin: auto;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+
+  background-color: white;
+  position: absolute;
+  left: 20%;
+  right: 80%;
+}
+.left {
+  width: 50%;
+  height: 100%;
+}
+.left img {
+  height: 100%;
+  width: 100%;
+}
+.rightWrapper {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.right h2 {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.right p {
+  font-size: 15px;
+  font-weight: bold;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.right {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 540px;
+}
+.adjust {
+  /* margin-top: -12px; */
+  text-align: center;
+  align-items: center;
+}
+.formData {
+  /* border: 1px solid black; */
+  margin-top: -20px;
+}
+.formData input {
+  /* width: 55%; */
+  margin-top: 10px;
+  padding: 12px 80px;
+  border: 1px solid black;
+}
+.formData input:focus {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.offers {
+  padding-left: -10px;
+  width: 60%;
+  margin-left: 26%;
+}
+.offers > label {
+  margin-top: 1px;
+  margin-left: 10px;
+  font-size: x-small;
+}
+#Subscribe {
+  margin-left: -90px;
+}
+
+input[type="radio"] {
+  padding: 0.3em;
+  -webkit-appearance: none;
+  outline: 0.1em solid black;
+  outline-offset: 0.1em;
+}
+
+input[type="radio"]:checked {
+  display: inline-block;
+  background-color: #000;
+}
+.radioBtn {
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+.login {
+  margin-top: 5%;
+  /* width: 64%; */
+  background-color: black;
+  color: white;
+  font-size: large;
+  margin: 0 auto;
+  /* height: 38px; */
+  padding: 6px 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.firsthr {
+  width: 150px;
+  padding: 4%;
+}
+.secondhr {
+  width: 150px;
+  padding: 4%;
+}
+
+.orDiv {
+  display: flex;
+  margin: 0 auto;
+}
+span {
+  color: gray;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.logos {
+  width: 64%;
+  margin: 0 auto;
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.logos div {
+  cursor: pointer;
+}
+a {
+  color: #9ea0b2;
+}
+.signinfooter {
+  width: 58%;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #9ea0b2;
+  /* font-weight: 400; */
+  font-size: 14px;
+}
+.signinfooter a {
+  text-decoration: underline;
+}
+.forgetpass {
+  margin-top: 10px;
+  color: gray;
+  font-size: 13px;
+  cursor: pointer;
+}
