@@ -98,13 +98,14 @@ const WomenItem = () => {
     // console.log("data recieved")
     // console.log(page)
     console.log(page)
-  }, [page,grid2]);
+    
+  }, [page]);
 //_page=${page}&_limit=16
   async function getdata() {
-    let datas = await fetch(`http://localhost:8080/womens?_page={page}`);
+    let datas = await fetch(`https://modesensclone.herokuapp.com/womens?_page=${page}`);
 
     let data = await datas.json();
-    // console.log(data)
+    console.log(data)
     setItems(data);
   }
   const handleUser = (e) => {

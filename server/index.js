@@ -27,18 +27,7 @@ app.get("/beauties", async (req, res) => {
     res.json({ message: err.message });
   }
 });
-app.post("/womens",(req,res)=>{
-  
-  // const data=Men.insertMany()
-  const movie = new Women({...req.body});
-  movie.save((err,movie)=>{
-      try {
-          res.send(movie);
-      } catch {
-          res.send(err);
-      }
-  })
-})
+
 app.get("/mens", async (req, res) => {
   const _limit=12;
   const{_page} = req.query;
