@@ -100,10 +100,10 @@ const ProductItem = () => {
   }, [page,grid2]);
 
   async function getdata() {
-    let datas = await fetch(`https://modesense-masai.herokuapp.com/beuties?_page=${page}&_limit=16`);
+    let datas = await fetch(`http://localhost:8080/beauties`);
 
     let data = await datas.json();
-    setItems(data.data);
+    setItems(data);
   }
   const handleUser = (e) => {
     localStorage.setItem("IndData", JSON.stringify(e));

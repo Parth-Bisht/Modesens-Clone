@@ -97,13 +97,14 @@ const MenItem = () => {
     getdata();
     // console.log("data recieved")
     // console.log(page)
+    console.log(page)
   }, [page,grid2]);
 //_page=${page}&_limit=16
   async function getdata() {
-    let datas = await fetch(`http://localhost:8080/beauties`);
+    let datas = await fetch(`http://localhost:8080/mens?_page={page}`);
 
     let data = await datas.json();
-    console.log(data)
+    // console.log(data)
     setItems(data);
   }
   const handleUser = (e) => {
