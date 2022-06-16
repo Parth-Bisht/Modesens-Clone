@@ -6,7 +6,7 @@ const Women = require("./Models/womens");
 const app = express();
 
 const cors = require("cors");
-app.use(cors({ origin: ["http://localhost:8080"] }));
+app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
