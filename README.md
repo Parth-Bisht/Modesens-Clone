@@ -1,4 +1,4 @@
 # Modesens-Clone
 An E-Commerce website
 
-Server link : https://modesensclone.herokuapp.com/
+Server link : https://modesensclonefw16.herokuapp.com/
