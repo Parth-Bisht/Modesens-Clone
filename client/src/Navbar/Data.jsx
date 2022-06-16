@@ -1,10 +1,11 @@
 import React from 'react'
-import FirstData from './FirstData'
+import FirstData from './FirstData';
+import "./Navbar.css"
 function Data({r}) {
   return (
     <div>
     {console.log(r)}
-    <div><FirstData r={r}/></div>
+    <div className ="secondDiv"><FirstData r={r}/></div>
     </div>
   )
 }
