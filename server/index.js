@@ -21,7 +21,8 @@ app.use(express.json());
 
 app.get("/beauties", async (req, res) => {
   // _page=${page}&_limit=16
-  const{_page,_limit} = req.query;
+  const _limit=10;
+  const{_page} = req.query;
   const currPage = Number(_page) || 1;
   const skip = _limit*(currPage-1);
 
@@ -35,8 +36,8 @@ app.get("/beauties", async (req, res) => {
 });
 
 app.get("/mens", async (req, res) => {
- 
-  const{_page,_limit} = req.query;
+  const _limit=10;
+  const{_page} = req.query;
   const currPage = Number(_page) || 1;
   const skip = _limit*(currPage-1);
 
@@ -50,8 +51,8 @@ app.get("/mens", async (req, res) => {
 });
 
 app.get("/womens", async (req, res) => {
-
-  const{_page,_limit} = req.query;
+  const _limit=10;
+  const{_page} = req.query;
   const currPage = Number(_page) || 1;
   const skip = _limit*(currPage-1);
 
