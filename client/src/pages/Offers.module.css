@@ -53,11 +53,10 @@
 
 }
 .child >img{
-height: 50px;
-object-fit: cover;
+height: 80px;
+/* object-fit: cover; */
 width: 220px;
 margin-top: 30px;
-object-position:  auto 45px;
 /* background-color: black; */
 }
 .child{
