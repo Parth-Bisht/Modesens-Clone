@@ -11,10 +11,20 @@ app.use(cors({ origin: ["http://localhost:8080"] }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
+
+
+// Client makes request for most recent items: GET /items?limit=20
+// On scroll/next page, client makes second request GET /items?limit=20&offset=20
+// On scroll/next page, client makes third request GET /items?limit=20&offset=40
+
+
 app.get("/beauties", async (req, res) => {
+
   try {
-    const data = await Beauty.find();
+    const data = await Beauty.find().limit (1) .skip (1)
     return res.status(201).send(data);
+
   } catch (err) {
     res.json({ message: err.message });
   }
