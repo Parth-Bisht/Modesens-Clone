@@ -3,7 +3,7 @@ import WhyMod from '../components/WhyModesens/WhyMod'
 
 const WhyModesensPage = () => {
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <WhyMod/>
     </div>
   )

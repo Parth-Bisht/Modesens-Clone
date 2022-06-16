@@ -7,7 +7,7 @@
 }
 .head{
     background-color: #fff;
-    background-image: url('../Images/about-bg.png');
+    background-image: url('./Images/about-bg.png');
     background-position: 60%;
     background-repeat: no-repeat;
     background-size:cover;
