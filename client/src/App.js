@@ -7,6 +7,7 @@ import WhyModesensPage from "./pages/WhyModesensPage";
 import OffersPage from "./pages/OffersPage";
 import MenPage from "./pages/MenPage";
 import WomenPage from "./pages/WomenPage";
+import Community from "./components/community/Comminity";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/men/:id" element={<SingleProduct/>}></Route>
         <Route path="/women" element={<WomenPage/>}></Route>
         <Route path="/women/:id" element={<SingleProduct/>}></Route>
+        <Route path="/community" element={<Community/>}></Route>
       </Routes>
         <Footer/>
     </div>
