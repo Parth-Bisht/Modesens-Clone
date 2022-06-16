@@ -15,7 +15,7 @@ function FirstData({r}) {
             return <div key ={i} className="secData"><a href={`/${r}/${a}`} onMouseEnter={(e)=>{
               e.preventDefault()
              setMenu(<SecondData f={r} s={a}></SecondData>)
-            }} >{el}</a></div>
+            }} onMouseLeave={()=>{setMenu("")}}>{el}</a></div>
         })}
         
        
