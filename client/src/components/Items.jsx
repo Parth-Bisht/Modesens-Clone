@@ -1,9 +1,19 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 import { useEffect, useState } from "react";
+import styles from './Beauty/Pagination.module.css';
+import "./Beauty/common.css"
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  ${props => props.grid2 === true && css`
+  grid-template-columns: 400px 400px;
+  gap:40px;
+    `};
+    ${props => props.grid3 === true && css`
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+    `}
   gap: 4px;
 `;
 const Button = styled.button`
@@ -68,13 +78,19 @@ const TextDiv = styled.div`
 const HeartImg = styled.img``;
 
 const ProductItem = () => {
+  const [page,setPage]=useState(1)
   const [items, setItems] = useState([]);
+  const [grid2,setgrid2]=useState(false)
+  const [grid3,setgrid3]=useState(false)
+
   useEffect(() => {
     getdata();
-  }, []);
+    // console.log("data recieved")
+    // console.log(page)
+  }, [page,grid2]);
 
   async function getdata() {
-    let datas = await fetch(`https://modesense-masai.herokuapp.com/beuties`);
+    let datas = await fetch(`https://modesense-masai.herokuapp.com/beuties?_page=${page}&_limit=16`);
 
     let data = await datas.json();
     setItems(data.data);
@@ -82,10 +98,93 @@ const ProductItem = () => {
   const handleUser = (e) => {
     localStorage.setItem("IndData", JSON.stringify(e));
   };
-
+  function handleSort(e){
+    // console.log("hello")
+    // console.log(e.target.value)
+    if(e.target.value==="highest_price"){
+    
+      // console.log(items[0].price)
+      items.sort((a,b)=>b.price-a.price)
+      setItems([...items])
+      // console.log("hello")
+    }
+    else if(e.target.value==="lowest_price"){
+    
+      // console.log(items[0].price)
+      items.sort((a,b)=>a.price-b.price)
+      setItems([...items])
+      // console.log("hello")
+    }
+  }
   return (
     <div>
-      <Wrapper>
+     <div className={styles.pagdiv}>
+     
+     <div className={styles.paginationWrap}>
+       <div className={styles.pagination}>
+         <span  onClick={() => setPage(1)}>1</span>
+         <span  onClick={() => setPage(2)}>2</span>
+         <span  onClick={() => setPage(3)}>3</span>
+         <span  onClick={() => setPage(4)}>4</span>
+         <div className={styles.paginationDot}>
+           <c>.</c>
+           <c>.</c>
+           <c>.</c>
+         </div>
+         
+         <div className={styles.imgTag}>
+         <img src="https://img.icons8.com/material-outlined/14/000000/more-than.png"  onClick={() => setPage(page+1)} alt=""/></div>
+       </div>
+     </div>
+     <div className={styles.sortdiv}>
+       <img
+         className={styles.viewsort}
+         onClick={()=>{
+          setgrid2(true)
+          setgrid3(false)
+          // console.log(grid2)
+         }}
+
+         src="https://cdn.modesens.com/static/img/20210908column2.svg"
+         alt=""
+       />
+       <img
+         className={styles.viewsort}
+         onClick={()=>{
+          setgrid3(true)
+          setgrid2(false)
+          // console.log(grid2)
+         }}
+
+         src="https://cdn.modesens.com/static/img/20210908column3.svg"
+         alt=""
+       />
+       <img
+         className={styles.viewsort}
+         onClick={()=>{
+          setgrid3(false)
+          setgrid2(false)
+          // console.log(grid2)
+         }}
+         src="https://cdn.modesens.com/static/img/20210908column4_active.svg"
+         alt=""
+       />
+       <div>
+         <select className="options" name="" id="" onChange={handleSort}>
+
+           <option value="best_sellers">Best Sellers</option>
+           <option value="new_arrival">New Arrivals</option>
+           <option value="most_liked">Most Liked</option>
+           <option value="highest_price">Highest Price</option>
+           <option value="lowest_price">Lowest Price</option>
+           <option value="new_sales">New Sales</option>
+           <option value="largest_discount">Largest Discount Amount</option>
+           <option value="largest_discount_per">Largest Discount Percentage</option>
+         </select>
+       </div>
+     </div>
+   </div>
+      <Wrapper grid2={grid2} grid3={grid3}>
         {items.map((e) => {
           return (
             <Container

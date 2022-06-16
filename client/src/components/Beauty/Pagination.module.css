@@ -49,16 +49,19 @@
 
 .viewsort{
     padding-right: 7px;
+    cursor: pointer;
 }
 .paginationWrap{
     /* border: 2px solid gray; */
     width: 40%;
+    margin-top: -400px;
 
 }
 .pagination{
     /* border: 2px solid red; */
     width: 45%;
     margin: auto;
+    margin-left: 500px;
     display: flex;
     justify-content:space-between;
 }

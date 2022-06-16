@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import DesignerBeauty from '../components/Beauty/DesignerBeauty';
 import { FilterDiv } from '../components/Beauty/FilterSection';
 import ProductItem from '../components/Items';
-import Pagination from '../components/Beauty/Pagination';
 
 
 const Wrapper= styled.div`
     display:flex;
+   
 `
 const Left= styled.div`
     width: 25%;
@@ -27,7 +27,7 @@ const ProductsPage = () => {
             </Left>
             <Right>
                 <DesignerBeauty/>
-                <Pagination/>
+               
                 <ProductItem/>
             </Right>
         </Wrapper>
