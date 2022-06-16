@@ -73,10 +73,10 @@ function Navbar() {
         <div className="search"><img style={{width: "50%%"}} src ="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt=""/>
         <input type="text" placeholder='SEARCH'/>
         </div>
-                 
+        <div style={{marginTop:"-10px"}} onClick={()=>setIsAuth(false)}>{isAuth? "Log Out":""}</div>
         </div>
 
-       
+        
     </div>
     <div >{menu}</div>
     </div>

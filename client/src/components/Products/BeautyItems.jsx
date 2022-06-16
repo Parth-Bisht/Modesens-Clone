@@ -100,7 +100,7 @@ const ProductItem = () => {
   }, [page,grid2]);
 
   async function getdata() {
-    let datas = await fetch(`https://modesensclone.herokuapp.com/beauties?_page=${page}`);
+    let datas = await fetch(`https://modesensclonefw16.herokuapp.com/beauties?_page=${page}`);
 
     let data = await datas.json();
     setItems(data);
