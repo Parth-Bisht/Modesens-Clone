@@ -21,19 +21,19 @@ function Navbar() {
            setMenu(<Data r={d} onMouseLeave ={()=>{setMenu("")}}/>)
         }}
         >MEN</Link>
-        <Link to='beauty'
+        <Link to='products'
         onMouseEnter={()=>{
             let d="beauty";
            setMenu(<Data r={d} onMouseLeave ={()=>{setMenu("")}}/>)
         }}
         >BEAUTY</Link>
-        <Link to='kids'
+        <Link to='men'
         onMouseEnter={()=>{
             let d="kids";
            setMenu(<Data r={d} onMouseLeave ={()=>{setMenu("")}}/>)
         }}
         >KIDS</Link>
-        <Link to='home'
+        <Link to='/'
         onMouseEnter={()=>{
             let d="home";
            setMenu(<Data r={d} onMouseLeave ={()=>{setMenu("")}}/>)
@@ -57,7 +57,7 @@ function Navbar() {
            setMenu(<Data r={d} onMouseLeave ={()=>{setMenu("")}}/>)
         }}
         >COMMUNITY</Link>
-        <Link to='why'
+        <Link to='whymodsens'
         onMouseEnter={()=>{
             let d="why";
            setMenu(<Data r={d} onMouseLeave ={()=>{setMenu("")}}/>)
@@ -68,7 +68,9 @@ function Navbar() {
         <div><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png" alt =""></img></div>
         <div><img src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg" alt=""/></div>
         <div><img src ="https://cdn.modesens.com/static/img/20200612account_b2.svg" alt=""/></div>
-        <div className="search"><img style={{width: "50%%"}} src ="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt=""/><span>SEARCH</span></div>
+        <div className="search"><img style={{width: "50%%"}} src ="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt=""/>
+        <input type="text" placeholder='SEARCH'/>
+        </div>
    
         </div>
 

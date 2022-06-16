@@ -8,10 +8,12 @@ import Offers from "./pages/Offers";
 import Women from "./pages/Women";
 import WhyModesensPage from "./pages/WhyModesensPage";
 import Community from "./pages/Comminity";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>}></Route>
         <Route path="/products" element={<ProductsPage/>}></Route>

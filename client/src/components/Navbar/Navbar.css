@@ -34,17 +34,29 @@
 .rightIcons{
     display: flex;
     margin-left:25%;
+    align-items: center;
    
 }
 .rightIcons>div{
-    padding-top:6%;
+    /* padding-top:6%; */
     
     margin-left:7%;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
 }
 .search>img{
     margin-left:2%;
     width: 13%;
     
+}
+.search input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333;
+    width: 120px;
 }
 .rightIcons>div>span{
     margin-left:8%;
