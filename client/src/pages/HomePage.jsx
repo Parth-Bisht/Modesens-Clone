@@ -6,7 +6,7 @@ import Bottom from '../components/Footer/Bottom';
 
 const HomePage = () => {
   return (
-    <div style={{textAlign:"center"}}>
+    <div style={{textAlign:"center",zIndex:"-3"}}>
       <MainSlider/>
       <Trending/>
       <CommunityPost/>

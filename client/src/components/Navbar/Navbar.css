@@ -1,6 +1,6 @@
 .navbar{
     display:grid;
-    grid-template-columns: 11% 60% 30%;
+    grid-template-columns: 10% 60% 30%;
   
    position: relative;
    height:50px;
@@ -40,7 +40,7 @@
 .rightIcons>div{
     /* padding-top:6%; */
     
-    margin-left:7%;
+    /* margin-left:7%; */
 }
 .search{
     display: flex;

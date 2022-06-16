@@ -133,7 +133,7 @@ const WomenItem = () => {
     <div>
      <div>
        
-       <Header>Woen Collection</Header>
+       <Header>Women Collection</Header>
        <SubHead>Shop Awesome attire with price comparison across 500+ stores in one place. Discover the latest brands in men's Collection.</SubHead>
    
           </div>

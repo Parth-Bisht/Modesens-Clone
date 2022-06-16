@@ -14,12 +14,15 @@
 
 .features{
     font-size:1.8rem;
+    text-align: center;
 }
 .disc{
     font-size:1.3rem;
     color: #a1a1a1;
     margin-top:-10px;
+    text-align: center;
 }
+
 .hrDiv{
     margin-top:5rem;
     position: relative;
