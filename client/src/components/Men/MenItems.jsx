@@ -1,7 +1,6 @@
 import styled,{css} from "styled-components";
 import { useEffect, useState } from "react";
-import styles from './Beauty/Pagination.module.css';
-import "./Beauty/common.css"
+import styles from '../Beauty/Pagination.module.css';
 import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: grid;
@@ -75,9 +74,20 @@ const TextDiv = styled.div`
     margin: 0;
   }
 `;
+const Header= styled.h1`
+font-size: 24px;
+font-family: 'Open Sans', sans-serif;
+`
+const SubHead= styled.p`
+font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+text-align: left;
+
+`
 const HeartImg = styled.img``;
 
-const ProductItem = () => {
+const MenItem = () => {
   const [page,setPage]=useState(1)
   const [items, setItems] = useState([]);
   const [grid2,setgrid2]=useState(false)
@@ -87,12 +97,14 @@ const ProductItem = () => {
     getdata();
     // console.log("data recieved")
     // console.log(page)
+    console.log(page)
   }, [page,grid2]);
-
+//_page=${page}&_limit=16
   async function getdata() {
-    let datas = await fetch(`https://modesensclone.herokuapp.com/beauties?_page=${page}`);
+    let datas = await fetch(`https://modesensclone.herokuapp.com/mens?_page=${page}`);
+
     let data = await datas.json();
-    // console.log(data);
+    // console.log(data)
     setItems(data);
   }
   const handleUser = (e) => {
@@ -118,7 +130,13 @@ const ProductItem = () => {
   }
   return (
     <div>
-     <div className={styles.pagdiv}>
+     <div>
+       
+       <Header>Men Collection</Header>
+       <SubHead>Shop Awesome attire with price comparison across 500+ stores in one place. Discover the latest brands in men's Collection.</SubHead>
+   
+          </div>
+     <div className={styles.pagdiv} style={{marginTop:"-150px"}}>
      
      <div className={styles.paginationWrap}>
        <div className={styles.pagination}>
@@ -127,9 +145,9 @@ const ProductItem = () => {
          <span  onClick={() => setPage(3)}>3</span>
          <span  onClick={() => setPage(4)}>4</span>
          <div className={styles.paginationDot}>
-           <span>.</span>
-           <span>.</span>
-           <span>.</span>
+           <c>.</c>
+           <c>.</c>
+           <c>.</c>
          </div>
          
          <div className={styles.imgTag}>
@@ -191,7 +209,6 @@ const ProductItem = () => {
               onClick={() => {
                 handleUser(e);
               }}
-              key={e._id}
             >
               <Link to={`${e._id}`} style={{textDecoration:"none"}}>
                 <HeartDIv>
@@ -258,4 +275,4 @@ const ProductItem = () => {
   );
 };
 
-export default ProductItem;
+export default MenItem;
