@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import style from "./community.module.css";
 import CommunityData from "./CommunityData";
-// import Communitydata from "./CommunityData";
+import CommunitySlider from "./CommunitySlider";
 
 import styled from 'styled-components';
 const Tab = styled.button`
@@ -13,15 +13,18 @@ const Tab = styled.button`
   background: white;
   border: 0;
   outline: 0;
+  transition: all 0.4s;
   ${({ active }) =>
     active &&
     `
     border-bottom: 2px solid crimson;
     opacity: 1;
+    transition: all 0.4s;
   `}
 `;
 const ButtonGroup = styled.div`
   display: flex;
+  transition: all 0.4s;
 `;
 const types = ['Following', 'Discover'];
 
@@ -31,11 +34,12 @@ const types = ['Following', 'Discover'];
 
 const Community = () => {
 
-    const [active, setActive] = useState(types[0]);
+    const [active, setActive] = useState(types[1]);
    
 console.log(active);
   return (
           <>
+          <CommunitySlider/>
           <div className="container">
 <div className={style.community_bar_links}>
 
