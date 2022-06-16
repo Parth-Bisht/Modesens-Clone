@@ -1,6 +1,6 @@
 import React from 'react'
-import style from "./Offers.module.css"
-import { offers } from './data'
+import style from "../components/Offer/Offers.module.css"
+import { offers } from '../components/Offer/data'
 const Offers = () => {
   return (
     <div className={style.offers}>
