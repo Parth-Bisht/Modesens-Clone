@@ -46,7 +46,7 @@ The result was an advanced platform that connects information to shoppers seamle
 # Creators
 
 <ul>
-<li>@Parth Bisht</li>
+  <li><a href="https://github.com/Parth-Bisht">@Parth Bisht</a></li>
   <li><a href="https://github.com/muskan2507">@Muskan Shaw</a></li>
   <li><a href="https://github.com/Navedphysicist">@Naveed Khan</a></li>
   <li><a href="https://github.com/iamdebobrota">@Debu Haldar</a></li>
