@@ -47,11 +47,11 @@ The result was an advanced platform that connects information to shoppers seamle
 
 <ul>
 <li>@Parth Bisht</li>
-<li>@Muskan Shaw</li>
-<li>@Naveed Khan</li>
-<li>@Debu Haldar</li>
-<li>@Nandu Dumare</li>
-<li>@Anmol Raon</li>
+  <li><a href="https://github.com/muskan2507">@Muskan Shaw</a></li>
+  <li><a href="https://github.com/Navedphysicist">@Naveed Khan</a></li>
+  <li><a href="https://github.com/iamdebobrota">@Debu Haldar</a></li>
+  <li><a href="https://github.com/Nandudumare">@Nandu Dumare</a></li>
+  <li><a href="https://github.com/Anmolroan">@Anmol Raon</a></li>
 </ul>
 
 
