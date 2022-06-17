@@ -1,13 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-
 import Styles from "./FirstSlider.module.css";
 
 function NextArrow(props) {
+  // console.log("hello world")
   const { className, style, onClick } = props;
   return (
     <BsArrowRight
