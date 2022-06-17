@@ -1,19 +1,32 @@
-
-import './App.css';
-import Bottom from './Components/Bottom';
-import { Footer } from './Components/Footer';
-import Community from './Pages/community/Comminity';
-import CommunityData from './Pages/community/CommunityData';
-import WhyMod from './Pages/WhyMod';
+import ProductsPage from "./pages/ProductsPage";
+import {Routes,Route} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SingleProduct from "./pages/SingleProduct";
+import { Footer } from "./components/Footer/Footer";
+import Men from "./pages/Men";
+import Offers from "./pages/Offers";
+import Women from "./pages/Women";
+import WhyModesensPage from "./pages/WhyModesensPage";
+import Community from "./pages/Comminity";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Bottom/> */}
-      {/* <WhyMod/> */}
-
-      <Community/>
-     <Footer/>
+    <div>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}></Route>
+        <Route path="/products" element={<ProductsPage/>}></Route>
+        <Route path="/products/:id" element={<SingleProduct/>}></Route>
+        <Route path="/men/:id" element={<SingleProduct/>}></Route>
+        <Route path="/women/:id" element={<SingleProduct/>}></Route>
+        <Route path="/men" element={<Men/>}/>
+        <Route path="/women" element={<Women/>}/>
+        <Route path="/offers" element={<Offers/>}/>
+        <Route path="/whymodsens" element={<WhyModesensPage/>}></Route>
+        <Route path="/community" element={<Community/>}/>
+      </Routes>
+        <Footer/>
     </div>
   );
 }

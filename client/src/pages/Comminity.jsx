@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import { Link } from "react-router-dom";
-import style from "./community.module.css";
-import CommunityData from "./CommunityData";
-import CommunitySlider from "./CommunitySlider";
+import style from "../components/community/community.module.css";
+import CommunityData from "../components/community/CommunityData";
+import CommunitySlider from "../components/community/CommunitySlider";
 
 import styled from 'styled-components';
 const Tab = styled.button`

@@ -20,7 +20,7 @@ const communitySlider = () => {
       <Slider {...settings}>
         <div className={Styles.popUp_2}>
           <img
-            src={require("../../Images/comm1.png")}
+            src={require("./Images/comm1.png")}
             alt=""
             height="100%"
             width="100%"
@@ -28,7 +28,7 @@ const communitySlider = () => {
         </div>
         <div className={Styles.popUp_2}>
           <img
-            src={require("../../Images/comm2.png")}
+            src={require("./Images/comm2.png")}
             alt=""
             height="100%"
             width="100%"

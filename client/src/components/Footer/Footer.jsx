@@ -1,9 +1,7 @@
 import {React, useState} from "react";
-// import styled from "styled-components";
-// import "../Components/footer.css"
-import style from '../style/footer.module.css'
-import mobile from "../Images/mobile.png";
-import web from "../Images/web.png";
+import style from './footer.module.css'
+import mobile from "./Images/mobile.png";
+import web from "./Images/web.png";
 
 export const Footer=()=>{
     const [formData,setformData]=useState({
