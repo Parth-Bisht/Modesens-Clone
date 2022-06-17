@@ -1,0 +1,78 @@
+.popUp {
+  width: 71.375rem !important;
+  height: 25rem;
+  border-radius: 5px;
+  flex-direction: row;
+}
+.popUp_2 {
+  width: 71.375rem !important;
+  height: 10rem;
+  border-radius: 5px;
+  flex-direction: row;
+}
+
+.features {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.disc {
+  font-size: 1.3rem;
+  color: #a1a1a1;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.hrDiv {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.hrDiv > hr {
+  width: 92%;
+}
+.hrDiv > p {
+  font-size: 1.8rem;
+  background-color: white;
+  position: absolute;
+  margin-top: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popUp__3 {
+  width: 22.563rem !important;
+  height: 35.375rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.popUp__3 > div:nth-child(1) {
+  width: 22.625rem !important;
+  height: 26.938rem;
+}
+.popUp__3 > div:nth-child(2) {
+  width: 22.625rem !important;
+
+  height: 9.063rem;
+}
+
+.popUp__3 > div:nth-child(2) > p:nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.popUp__3 > div:nth-child(2) > p:nth-child(2) {
+  margin-top: -10px;
+}
+
+.popUp__3 > div:nth-child(2) > button {
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.popUp__3 > div:nth-child(2) > button:hover {
+  color: white;
+  background: black;
+}

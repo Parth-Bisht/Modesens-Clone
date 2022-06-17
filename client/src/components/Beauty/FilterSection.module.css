@@ -1,0 +1,97 @@
+.title1 {
+  margin-top: 0px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 13px;
+}
+.filterdiv {
+  display: flex;
+  flex-direction: column;
+  /* width: 300px; */
+  padding: 0 30px;
+  margin-top: 200px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+}
+.searchdiv {
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchdiv p {
+  margin-left: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(52, 49, 49);
+  font-size: 15px;
+}
+
+.searchdiv img {
+  margin-right: 22px;
+}
+
+.searchdiv:last-child p:last-child {
+  margin-right: 20px;
+}
+
+.selectdiv {
+  width: 100%;
+}
+select {
+  height: 32px;
+  width: 90%;
+  /* border: 1px solid red; */
+  color: rgb(45, 43, 43);
+  border: 1px solid gray;
+  font-size: 12px;
+  border: none;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.but {
+  margin-top: 10px;
+  height: 40px;
+  width: 80%;
+  border: 1px solid gray;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.but:hover {
+  transition: 100ms;
+  color: white;
+  background-color: rgb(23, 23, 23);
+}
+.lists {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 25px;
+}
+.lists > ul {
+  text-align: left;
+}
+.lists > ui {
+  text-align: left;
+  cursor: pointer;
+  font-size: 15px;
+}
+.high {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}

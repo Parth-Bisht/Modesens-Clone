@@ -1,0 +1,80 @@
+.pagdiv {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid rgb(55, 255, 0); */
+  align-items: flex-end;
+  height: 200px;
+  padding: 10px;
+}
+.sortdiv {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid rgb(0, 68, 255); */
+  width: 25%;
+  height: 35px;
+}
+.pag {
+  margin-left: 450px;
+}
+
+.divmain {
+  padding-top: 20px;
+}
+.ButtonDiv {
+  /* border: 1px solid rgb(246, 255, 0); */
+  display: flex;
+  align-items: center;
+  /* margin-top:-90px */
+}
+.ButtonDiv button {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 6px 20px;
+  margin-top: -250px;
+  margin-left: 300px;
+  width: 200px;
+}
+.ButtonDiv button:hover {
+  background-color: black;
+  color: white;
+}
+.options {
+  width: 85px;
+  font-weight: bold;
+  font-size: 11px;
+  /* border: 0px; */
+}
+
+.viewsort {
+  padding-right: 7px;
+  cursor: pointer;
+}
+.paginationWrap {
+  /* border: 2px solid gray; */
+  width: 40%;
+  margin-top: -400px;
+}
+.pagination {
+  /* border: 2px solid red; */
+  width: 45%;
+  margin: auto;
+  margin-left: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.paginationDot {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+}
+.imgTag {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.pagination span {
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.pagination span:hover {
+  border-bottom: 1px solid red;
+}

@@ -58,3 +58,4 @@ The result was an advanced platform that connects information to shoppers seamle
 
 
 Server link : https://modesensclonefw16.herokuapp.com/
+

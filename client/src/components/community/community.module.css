@@ -1,0 +1,122 @@
+.main_container {
+  font-family: "Suisse Intl";
+  padding: 10px 10px;
+}
+.top_bar_image_div {
+  position: relative;
+  color: white;
+  width: fit-content;
+  margin: auto;
+}
+.top_bar_image_text {
+  position: relative;
+  bottom: 150px;
+  left: 30px;
+}
+.top_bar_image_text h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: left;
+}
+.top_bar_image_text p {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: left;
+}
+.community_posts {
+  width: fit-content;
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+.community_individul_posts {
+  border: 1px solid rgba(87, 87, 87, 0.41);
+  padding: 10px 10px;
+}
+.community_posts_logoDiv {
+  display: flex;
+  gap: 10px;
+}
+.community_posts_logoDiv img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.community_posts_logoDiv p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.882);
+}
+.community_posts_MainlogoDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.community_posts_MainlogoDiv button {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.816);
+  border: 1px solid grey;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.community_posts_MainlogoDiv button:hover {
+  background-color: rgba(27, 27, 27, 0.938);
+  color: rgb(255, 255, 255);
+}
+.community_posts_imagesDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+.community_posts_iDiv_i1 img {
+  height: 340px;
+  width: 230px;
+}
+.community_posts_iDiv_i2_i3_i4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+.community_posts_iDiv_i2_i3_i4 img {
+  height: 107px;
+  width: 90px;
+  object-fit: cover;
+}
+.community_posts_lastLine {
+  text-align: left;
+  margin-top: -11px;
+  margin-left: 8px;
+  margin-bottom: -14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.86);
+}
+.community_bar_links {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  gap: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.918);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* height: 90px; */
+}
+/* slider */
+.popUp {
+  width: 72rem;
+  height: 15rem;
+}
+.popUp_2 {
+  width: 72rem;
+  height: 15rem;
+}

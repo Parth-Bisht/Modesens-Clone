@@ -1,0 +1,176 @@
+.whyMod_main {
+  box-sizing: border-box;
+  margin: 10px;
+  /* border: 1px solid red; */
+  font-family: "SuisseIntl";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.head {
+  background-color: #fff;
+  background-image: url("./Images/about-bg.png");
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+}
+.head h4 {
+  font-size: 2.14rem;
+  font-weight: 500;
+  line-height: 40px;
+  padding-top: 20px;
+  color: white;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.head button {
+  margin: auto;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.841);
+  padding: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid rgb(21, 21, 21);
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #fff;
+}
+.head > button:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+
+.iframe {
+  width: 710px;
+  height: 400px;
+  margin-top: 60px;
+  border-left: 1px solid black;
+  background-image: url("https://cdn.modesens.com/static/img/20210407videoposter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.compare_price {
+  background-color: #f8f7f6;
+  width: 1060px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+.left {
+  width: 290px;
+}
+.comp_h {
+  font-size: 30px;
+  font-weight: 500;
+}
+.comp_h span {
+  font-weight: 300;
+}
+.comp_h + p {
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: -30px;
+  color: rgba(0, 0, 0, 0.867);
+  line-height: 20px;
+}
+.join_btn {
+  padding: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: rgba(0, 0, 0, 0.937);
+  color: rgba(255, 255, 255, 0.933);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.compare_img {
+  margin-top: 30px;
+  height: 300px;
+  padding-right: 10px;
+}
+.first_know {
+  background-color: white;
+}
+.right {
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+}
+.right img {
+  margin-top: -200px;
+  margin-bottom: -200px;
+  width: 660px;
+  height: 780px;
+}
+.know {
+  width: 350px;
+}
+.community {
+  background-color: #f8f7f6;
+  width: 1060px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+.community img {
+  height: 900px;
+  width: 1000px;
+  margin-top: 40px;
+}
+.loyalty {
+  width: 1060px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.loy_flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.loy_flex div {
+  /* width: 600px; */
+}
+.loy_left p {
+  width: 490px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.838);
+}
+.loy_right div {
+  display: flex;
+  gap: 10px;
+  width: 460px;
+}
+.loy_right div p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.838);
+}
+.loy_left button {
+  padding: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: rgba(0, 0, 0, 0.937);
+  color: rgba(255, 255, 255, 0.933);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.loy_left button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+}
+.learn {
+  padding-top: 1px;
+}
