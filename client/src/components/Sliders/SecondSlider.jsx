@@ -8,6 +8,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import Styles from "./FirstSlider.module.css";
 
 function NextArrow(props) {
+  // console.log("hello world")
   const { className, style, onClick } = props;
   return (
     <BsArrowRight
