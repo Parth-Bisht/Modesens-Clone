@@ -28,14 +28,18 @@ app.get("/beauties", async (req, res) => {
 });
 
 app.get("/mens", async (req, res) => {
+
   const _limit = 12;
+
   const { _page } = req.query;
   const currPage = Number(_page) || 1;
   const skip = _limit * (currPage - 1);
 
   try {
+
     const data = await Men.find().limit(_limit).skip(skip);
     return res.status(201).send(data);
+
   } catch (err) {
     res.json({ message: err.message });
   }
@@ -49,10 +53,14 @@ app.get("/womens", async (req, res) => {
   const skip = _limit * (currPage - 1);
 
   try {
+
     const data = await Women.find().limit(_limit).skip(skip);
     return res.status(201).send(data);
+
   } catch (err) {
+
     res.json({ message: err.message });
+
   }
 });
 
@@ -61,9 +69,11 @@ app.listen(PORT, async () => {
   try {
     await connection;
     console.log("connection established");
-  } catch (err) {
-    console.log({ message: err.message });
-  }
 
+  } catch (err) {
+
+    console.log({ message: err.message });
+
+  }
   console.log("listening on port " + PORT);
 });
