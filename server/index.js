@@ -11,6 +11,9 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+
+// ---For Beauty query fetching the Beauty Cluster----
+
 app.get("/beauties", async (req, res) => {
   // _page=${page}&_limit=16
   const _limit = 12;
@@ -26,6 +29,8 @@ app.get("/beauties", async (req, res) => {
     res.json({ message: err.message });
   }
 });
+
+// ---For mens query fetchingn the Mens dataset Collections-------
 
 app.get("/mens", async (req, res) => {
 
@@ -44,6 +49,8 @@ app.get("/mens", async (req, res) => {
     res.json({ message: err.message });
   }
 });
+
+// ---For womens section query fetchingn the Womesn dataset Collections-------
 
 app.get("/womens", async (req, res) => {
   const _limit = 12;
@@ -64,6 +71,8 @@ app.get("/womens", async (req, res) => {
   }
 });
 
+
+// ---Listening on port 8080 ----
 const PORT = 8080;
 app.listen(PORT, async () => {
   try {

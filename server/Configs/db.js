@@ -4,3 +4,6 @@ const connection = mongoose
   .then(() => {console.log("connection sucessful"); })
   .catch((err) => console.log("no connection"));
 module.exports = connection;
+
+//username of the project ---modesensproj
+//password of the project --projmodesens
