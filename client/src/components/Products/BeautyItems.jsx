@@ -5,15 +5,12 @@ import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  ${(props) =>
-    props.grid2 === true &&
-    css`
+  ${(props) =>props.grid2 === true &&    css`
       grid-template-columns: 400px 400px;
       gap: 40px;
     `};
   ${(props) =>
-    props.grid3 === true &&
-    css`
+    props.grid3 === true &&    css`
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     `}
@@ -95,7 +92,6 @@ const ProductItem = () => {
   const [items, setItems] = useState([]);
   const [grid2, setgrid2] = useState(false);
   const [grid3, setgrid3] = useState(false);
-
   useEffect(() => {
     getdata();
     // console.log("data recieved")
@@ -103,10 +99,7 @@ const ProductItem = () => {
   }, [page, grid2]);
 
   async function getdata() {
-    let datas = await fetch(
-      `https://modesensclonefw16.herokuapp.com/beauties?_page=${page}`
-    );
-
+    let datas = await fetch(`https://modesensclonefw16.herokuapp.com/beauties?_page=${page}`);
     let data = await datas.json();
     setItems(data);
   }
@@ -129,6 +122,7 @@ const ProductItem = () => {
     }
   }
   return (
+
     <div>
       <div>
         <Header>Designer Beauty</Header>
@@ -151,11 +145,7 @@ const ProductItem = () => {
             </div>
 
             <div className={styles.imgTag}>
-              <img
-                src="https://img.icons8.com/material-outlined/14/000000/more-than.png"
-                onClick={() => setPage(page + 1)}
-                alt=""
-              />
+              <img src="https://img.icons8.com/material-outlined/14/000000/more-than.png"  onClick={() => setPage(page + 1)}  alt=""  />
             </div>
           </div>
         </div>
@@ -180,12 +170,7 @@ const ProductItem = () => {
             src="https://cdn.modesens.com/static/img/20210908column3.svg"
             alt=""
           />
-          <img
-            className={styles.viewsort}
-            onClick={() => {
-              setgrid3(false);
-              setgrid2(false);
-              // console.log(grid2)
+          <img className={styles.viewsort}  onClick={() => { setgrid3(false);  setgrid2(false);   // console.log(grid2)
             }}
             src="https://cdn.modesens.com/static/img/20210908column4_active.svg"
             alt=""

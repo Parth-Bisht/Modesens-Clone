@@ -62,12 +62,7 @@ const ThirdSlider = () => {
       <Slider {...settings}>
         <div className={Styles.popUp__3}>
           <div>
-            <img
-              src="https://cdn.modesens.com/banner/20220531-modesens-Sale-364x484.jpg"
-              alt=""
-              width="100%"
-              height="100%"
-            />
+               <img  src="https://cdn.modesens.com/banner/20220531-modesens-Sale-364x484.jpg"   alt=""    width="100%"   height="100%"           />
           </div>
           <div>
             <p>New to Sale</p>

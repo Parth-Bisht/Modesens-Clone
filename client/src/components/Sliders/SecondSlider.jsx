@@ -53,17 +53,10 @@ const SecondSlider = () => {
     <div style={{ width: "95%", margin: "auto", marginTop: "80px" }}>
       <Slider {...settings}>
         <div className={Styles.popUp_2}>
-          <img
-            src={require("./img/img1.png")}
-            alt=""
-            height="100%"
-            width="100%"
-          />
+          <img src={require("./img/img1.png")} alt=""  height="100%"   width="100%"  />
         </div>
         <div className={Styles.popUp_2}>
-          <img
-            src={require("./img/img2.png")}
-            alt=""
+          <img   src={require("./img/img2.png")}    alt=""
             height="100%"
             width="100%"
           />

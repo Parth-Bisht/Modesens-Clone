@@ -12,8 +12,7 @@ function NextArrow(props) {
   return (
     <BsArrowRight
       className={className}
-      style={{
-        ...style,
+      style={{ ...style,
         display: "block",
         color: "black",
         height: "2.5rem",
@@ -54,8 +53,14 @@ const FirstSlider = () => {
     <div style={{ width: "95%", margin: "auto", marginTop: "20px" }}>
       <Slider {...settings}>
         <div className={Styles.popUp}>
-          <img
-            src="https://modesens.com/banner/12477/getimg/?img=%2Fbanner%2F20220615-modesens-SSENSE-1140x400-EN.jpg"
+          <img src="https://modesens.com/banner/12477/getimg/?img=%2Fbanner%2F20220615-modesens-SSENSE-1140x400-EN.jpg"   alt=""
+            height="100%"
+            width="100%"
+            // style={{ margin: "auto", marginTop: "15px" }}
+          />
+        </div>
+        <div className={Styles.popUp}>
+          <img src="https://modesens.com/banner/11846/getimg/?img=%2Fbanner%2F20220516-modesens-SS22-SALE-1140x400-EN.jpg"
             alt=""
             height="100%"
             width="100%"
@@ -63,17 +68,7 @@ const FirstSlider = () => {
           />
         </div>
         <div className={Styles.popUp}>
-          <img
-            src="https://modesens.com/banner/11846/getimg/?img=%2Fbanner%2F20220516-modesens-SS22-SALE-1140x400-EN.jpg"
-            alt=""
-            height="100%"
-            width="100%"
-            // style={{ margin: "auto", marginTop: "15px" }}
-          />
-        </div>
-        <div className={Styles.popUp}>
-          <img
-            src="https://modesens.com/banner/12406/getimg/?img=%2Fbanner%2F20220608-modesens-Home-1140x400-H.jpg"
+          <img  src="https://modesens.com/banner/12406/getimg/?img=%2Fbanner%2F20220608-modesens-Home-1140x400-H.jpg"
             alt=""
             height="100%"
             width="100%"

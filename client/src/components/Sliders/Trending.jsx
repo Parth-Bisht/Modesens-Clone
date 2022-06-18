@@ -177,8 +177,7 @@ export default class AutoPlayCarousel extends React.Component {
             </button>
           }
           leftChevron={
-            <button
-              style={{
+            <button    style={{
                 border: "none",
                 background: "white",
                 fontSize: "35px",

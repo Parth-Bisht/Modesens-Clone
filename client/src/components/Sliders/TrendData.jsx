@@ -52,8 +52,7 @@ export const trending = [
     st: "20 Stores",
   },
 ];
-export const communityPosts = [
-  {
+export const communityPosts = [  {
     src: "https://cdn.modesens.com/umedia/1587648s?w=400&",
   },
   {
